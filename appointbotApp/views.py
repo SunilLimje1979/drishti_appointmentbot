@@ -459,7 +459,7 @@ def fi_get_chat_action(request):
                         'appointment_status': 1,
                         'appointment_gender':'Male'
                     }
-                    api_url="https://drishtis.app/drishti_appointmentbot/api/insert_appointment_data/"
+                    api_url="https://drishtis.app/drishti_appointment/api/insert_appointment_data/"
                     response=requests.post(api_url,json=appointment_data)
                     print(response.text)
 
