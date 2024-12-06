@@ -459,7 +459,7 @@ def fi_get_chat_action(request):
                         'appointment_status': 1,
                         'appointment_gender':'Male'
                     }
-                    api_url="http://13.233.211.102/appointment/api/insert_appointment_data/"
+                    api_url="https://drishtis.app/drishti_appointmentbot/api/insert_appointment_data/"
                     response=requests.post(api_url,json=appointment_data)
                     print(response.text)
 
@@ -963,7 +963,7 @@ def fi_get_chat(request):
         # Get the JSON data from the request body
         json_data = request.body.decode('utf-8').strip()
         
-        url = 'http://13.233.211.102/appointmentbot/api/get_chat_action/'
+        url = 'https://drishtis.app/drishti_appointmentbotbot/api/get_chat_action/'
 
         # Make a POST request using the requests library
         headers = {'Content-Type': 'application/json'}
